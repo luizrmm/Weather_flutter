@@ -33,6 +33,7 @@ dependencies:
   flutter_bloc: ^7.0.0-nullsafety.5
   equatable: ^2.0.0
   dartz: ^0.10.0-nullsafety.1
+  cross_connectivity: ^3.0.1
 
 dev_dependencies:
   flutter_test:

@@ -11,12 +11,12 @@ class MockWeatherRepository extends Mock implements WeatherRepository {}
 void main() {
   final tCityName = "Muzambinho";
   final tWeather = Weather(
-      temperature: 18,
-      time: "0:00",
-      description: "description teste",
-      currently: "currently",
-      conditionSlug: "conditionSlug",
-      cityName: "Muzambinho");
+      temperature: 20,
+      time: "1:36",
+      description: "Tempo nublado",
+      currently: "noite",
+      conditionSlug: "cloud",
+      cityName: "Sao Paulo");
 
   group("usecase", () {
     late MockWeatherRepository mockWeatherRepository;
@@ -34,7 +34,7 @@ void main() {
       final result = await usecase(Params(cityName: tCityName));
       // assert
       expect(result, Right(tWeather));
-      verify(() => mockWeatherRepository.getWeather(tCityName));
+      verify(() => mockWeatherRepository.getWeather(tCityName)).called(1);
       verifyNoMoreInteractions(mockWeatherRepository);
     });
   });
