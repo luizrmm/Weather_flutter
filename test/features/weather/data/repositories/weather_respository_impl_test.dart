@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:teste_flutter/core/error/exceptions.dart';
 import 'package:teste_flutter/core/error/failures.dart';
-import 'package:teste_flutter/core/platform/network_info.dart';
+import 'package:teste_flutter/core/network/network_info.dart';
 import 'package:teste_flutter/features/weather/data/datasources/weather_local_data_source.dart';
 import 'package:teste_flutter/features/weather/data/datasources/weather_remote_data_source.dart';
 import 'package:teste_flutter/features/weather/data/models/weather_model.dart';

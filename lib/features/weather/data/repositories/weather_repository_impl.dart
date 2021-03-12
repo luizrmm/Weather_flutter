@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:teste_flutter/core/error/exceptions.dart';
-import 'package:teste_flutter/core/platform/network_info.dart';
+import 'package:teste_flutter/core/network/network_info.dart';
 import 'package:teste_flutter/features/weather/data/datasources/weather_local_data_source.dart';
 import 'package:teste_flutter/features/weather/data/datasources/weather_remote_data_source.dart';
 import 'package:teste_flutter/features/weather/domain/entities/weather.dart';
