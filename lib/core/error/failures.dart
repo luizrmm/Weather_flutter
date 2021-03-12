@@ -6,4 +6,6 @@ abstract class Failure extends Equatable {
 }
 
 // General failures
-class GetWeatherFailure extends Failure {}
+class ServerFailure extends Failure {}
+
+class CacheFailure extends Failure {}
