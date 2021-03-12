@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
 import 'package:teste_flutter/core/error/failures.dart';
 import 'package:dartz/dartz.dart';
 import 'package:teste_flutter/core/usecases/usecase.dart';
@@ -18,7 +19,7 @@ class GetWeather implements UseCase<Weather, Params> {
 class Params extends Equatable {
   final String cityName;
 
-  Params({required this.cityName});
+  Params({@required this.cityName});
 
   @override
   List<Object> get props => [cityName];

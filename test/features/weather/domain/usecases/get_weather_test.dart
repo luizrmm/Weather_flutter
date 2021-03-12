@@ -19,8 +19,8 @@ void main() {
       cityName: "Sao Paulo");
 
   group("usecase", () {
-    late MockWeatherRepository mockWeatherRepository;
-    late GetWeather usecase;
+    MockWeatherRepository mockWeatherRepository;
+    GetWeather usecase;
 
     setUp(() {
       mockWeatherRepository = MockWeatherRepository();

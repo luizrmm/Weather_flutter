@@ -1,13 +1,14 @@
+import 'package:flutter/foundation.dart';
 import 'package:teste_flutter/features/weather/domain/entities/weather.dart';
 
 class WeatherModel extends Weather {
   WeatherModel(
-      {required temperature,
-      required time,
-      required description,
-      required currently,
-      required conditionSlug,
-      required cityName})
+      {@required temperature,
+      @required time,
+      @required description,
+      @required currently,
+      @required conditionSlug,
+      @required cityName})
       : super(
             temperature: temperature,
             time: time,

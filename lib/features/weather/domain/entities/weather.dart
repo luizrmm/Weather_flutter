@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
 
 class Weather extends Equatable {
   final int temperature;
@@ -9,14 +10,14 @@ class Weather extends Equatable {
   final String cityName;
 
   Weather(
-      {required this.temperature,
-      required this.time,
-      required this.description,
-      required this.currently,
-      required this.conditionSlug,
-      required this.cityName});
+      {@required this.temperature,
+      @required this.time,
+      @required this.description,
+      @required this.currently,
+      @required this.conditionSlug,
+      @required this.cityName});
 
   @override
-  List<Object?> get props =>
+  List<Object> get props =>
       [temperature, time, description, currently, conditionSlug, cityName];
 }
