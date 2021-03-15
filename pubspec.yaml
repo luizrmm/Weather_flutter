@@ -34,12 +34,15 @@ dependencies:
   equatable: ^2.0.0
   dartz: ^0.10.0-nullsafety.1
   cross_connectivity: ^3.0.1
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   mocktail: ^0.1.0
   mockito: ^5.0.0
+  bloc_test: ^8.0.0-nullsafety.5
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
