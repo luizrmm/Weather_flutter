@@ -5,6 +5,7 @@ import 'package:mockito/mockito.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:teste_flutter/core/error/exceptions.dart';
 import 'package:teste_flutter/features/weather/data/datasources/weather_local_data_source.dart';
+import 'package:teste_flutter/features/weather/data/models/weather_enum.dart';
 import 'package:teste_flutter/features/weather/data/models/weather_model.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
@@ -53,7 +54,7 @@ void main() {
         time: "1:36",
         description: "Tempo nublado",
         currently: "noite",
-        conditionSlug: "cloud",
+        conditionSlug: WeatherCondition.cloudy,
         cityName: "Sao Paulo");
     test('should call Shared Preferences to cache data', () async {
       // arrange

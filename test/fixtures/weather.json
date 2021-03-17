@@ -1,8 +1,10 @@
 {
-    "temp": 20,
-    "time": "01:36",
-    "description": "Tempo nublado",
-    "currently": "noite",
-    "condition_slug": "cloud",
-    "city_name": "Sao Paulo"
+    "results": {
+        "temp": 20,
+        "time": "01:36",
+        "description": "Tempo nublado",
+        "currently": "noite",
+        "condition_slug": "cloud",
+        "city_name": "Sao Paulo"
+    }
 }

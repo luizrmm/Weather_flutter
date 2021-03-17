@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:teste_flutter/features/weather/data/models/weather_enum.dart';
 
 import 'package:teste_flutter/features/weather/domain/entities/weather.dart';
 import 'package:teste_flutter/features/weather/domain/repositories/weather_repository.dart';
@@ -15,7 +16,7 @@ void main() {
       time: "1:36",
       description: "Tempo nublado",
       currently: "noite",
-      conditionSlug: "cloud",
+      conditionSlug: WeatherCondition.cloudy,
       cityName: "Sao Paulo");
 
   group("usecase", () {

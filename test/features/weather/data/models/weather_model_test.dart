@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:teste_flutter/features/weather/data/models/weather_enum.dart';
 import 'package:teste_flutter/features/weather/data/models/weather_model.dart';
 import 'package:teste_flutter/features/weather/domain/entities/weather.dart';
 
@@ -12,7 +13,7 @@ void main() {
       time: "01:36",
       description: "Tempo nublado",
       currently: "noite",
-      conditionSlug: "cloud",
+      conditionSlug: WeatherCondition.cloudy,
       cityName: "Sao Paulo");
 
   test('should be a subclass of Weather Entity', () {

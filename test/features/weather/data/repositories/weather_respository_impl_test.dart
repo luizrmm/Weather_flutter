@@ -6,6 +6,7 @@ import 'package:teste_flutter/core/error/failures.dart';
 import 'package:teste_flutter/core/network/network_info.dart';
 import 'package:teste_flutter/features/weather/data/datasources/weather_local_data_source.dart';
 import 'package:teste_flutter/features/weather/data/datasources/weather_remote_data_source.dart';
+import 'package:teste_flutter/features/weather/data/models/weather_enum.dart';
 import 'package:teste_flutter/features/weather/data/models/weather_model.dart';
 import 'package:teste_flutter/features/weather/data/repositories/weather_repository_impl.dart';
 import 'package:teste_flutter/features/weather/domain/entities/weather.dart';
@@ -60,7 +61,7 @@ void main() {
         time: "1:36",
         description: "Tempo nublado",
         currently: "noite",
-        conditionSlug: "cloud",
+        conditionSlug: WeatherCondition.cloudy,
         cityName: "Sao Paulo");
 
     final Weather tWeather = tWeatherModel;

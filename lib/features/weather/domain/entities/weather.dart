@@ -1,12 +1,13 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
+import 'package:teste_flutter/features/weather/data/models/weather_enum.dart';
 
 class Weather extends Equatable {
   final int temperature;
   final String time;
   final String description;
   final String currently;
-  final String conditionSlug;
+  final WeatherCondition conditionSlug;
   final String cityName;
 
   Weather(
