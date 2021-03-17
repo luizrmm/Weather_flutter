@@ -11,12 +11,10 @@ import 'package:bloc_test/bloc_test.dart';
 class MockGetWeather extends Mock implements GetWeather {}
 
 void main() {
-  GetWeatherBloc bloc;
   MockGetWeather mockGetWeather;
 
   setUp(() {
     mockGetWeather = MockGetWeather();
-    bloc = GetWeatherBloc(getWeather: mockGetWeather);
   });
   test('initialState should be AuthenticationInitial', () {
     //arrange

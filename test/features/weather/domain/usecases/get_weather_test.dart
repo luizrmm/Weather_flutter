@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:mocktail/mocktail.dart';
+import 'package:mockito/mockito.dart';
 import 'package:teste_flutter/features/weather/data/models/weather_enum.dart';
 
 import 'package:teste_flutter/features/weather/domain/entities/weather.dart';
@@ -29,13 +29,13 @@ void main() {
     });
     test('shoud get the wather from de repository', () async {
       // arrange
-      when(() => mockWeatherRepository.getWeather(any()))
-          .thenAnswer((invocation) async => Right(tWeather));
+      when(mockWeatherRepository.getWeather(any))
+          .thenAnswer((_) async => Right(tWeather));
       //actual
       final result = await usecase(Params(cityName: tCityName));
       // assert
       expect(result, Right(tWeather));
-      verify(() => mockWeatherRepository.getWeather(tCityName)).called(1);
+      verify(mockWeatherRepository.getWeather(tCityName)).called(1);
       verifyNoMoreInteractions(mockWeatherRepository);
     });
   });
