@@ -11,7 +11,7 @@ import 'package:dartz/dartz.dart';
 part 'get_weather_event.dart';
 part 'get_weather_state.dart';
 
-const String ERROR_MESSAGE = 'Falha ao buscar clima!';
+const String ERROR_MESSAGE = 'Sorry service unavailable!';
 
 class GetWeatherBloc extends Bloc<GetWeatherEvent, GetWeatherState> {
   GetWeatherBloc({@required this.getWeather}) : super(GetWeatherInitial());

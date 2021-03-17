@@ -15,7 +15,7 @@ abstract class WeatherRemoteDataSource {
 class WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource {
   final http.Client client;
   final String baseUrl =
-      "https://api.hgbrasil.com/weather?key=918cc734&city_name=";
+      "https://api.hgbrasil.com/weather?key=01542736&city_name=";
 
   WeatherRemoteDataSourceImpl({@required this.client});
 
